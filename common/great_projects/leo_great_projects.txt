@@ -36,7 +36,7 @@ leo_wallstreet = {
     on_built = {
         FROM = {
             add_prestige = 30
-            add_mercantilism = 2
+            add_mercantilism = 10
         }
         # For canal, do add_canal = <canal_name>
     }
