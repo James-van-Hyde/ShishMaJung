@@ -1,0 +1,81 @@
+#############################
+# writen by: James van Hyde #
+#############################
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_great_project_shish_holstentor"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_holstentor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_shish_frauenkirche_dresden"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_frauenkirche_dresden.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_shish_dom_aachen"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_dom_aachen.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_shish_la_mezquita"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_la_mezquita.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_shish_tower_of_babel"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_tower_of_babel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_shish_great_garden"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_great_garden.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_shish_hippodrom"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_hippodrom.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_shish_colosseum"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_colosseum.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_shish_fort_cabana"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_fort_cabana.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_shish_statue_rhodos"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_statue_rhodos.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_shish_theodoros_trion"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_theodoros_trion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_shish_walhalla_doors"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_walhalla_doors.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_shish_el_dorado"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_el_dorado.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_shish_statue_genghis_khan"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_statue_genghis_khan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_shish_harbour_carthago"	
+		texturefile = "gfx//interface//great_projects//great_project_shish_harbour_carthago.dds"
+	}
+
+}

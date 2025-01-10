@@ -1,0 +1,154 @@
+#########################################
+# Written by: James van Hyde			#
+#########################################
+
+namespace = james_gimmik_event_rattenmesser
+namespace = james_gimmik_event_james_advisor
+
+#getting James van Hyde
+	#Main Event
+		country_event = {
+			id = james_gimmik_event_james_advisor.1
+			title = james_gimmik_event_james_advisor.1.t
+			desc = james_gimmik_event_james_advisor.1.d
+			picture = ADVISOR_eventPicture
+
+			fire_only_once = yes
+			major = yes
+			major_trigger = { ai = no }
+
+			trigger = {
+				is_year = 1700
+				tag = FRA
+				prestige = 50
+				legitimacy_equivalent = 60
+			}
+
+			immediate = {
+				hidden_effect = {
+					add_country_modifier = {
+						name = james_fixed_modifier_james_advisor_CM.1
+						duration = -1
+					}
+				}
+			}
+
+			option = {
+				name = james_gimmik_event_james_advisor.1.1
+				ai_chance = { factor = 10 }
+				define_advisor = {
+					type = treasurer
+					name = "James van Hyde"
+					skill = 1
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.20
+				}
+			}
+			option = {
+				name = james_gimmik_event_james_advisor.1.2
+				ai_chance = { factor = 30 }
+				define_advisor = {
+					type = trader
+					name = "James van Hyde"
+					skill = 3
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.20
+				}
+			}
+			option = {
+				name = james_gimmik_event_james_advisor.1.3
+				ai_chance = { factor = 20 }
+				define_advisor = {
+					type = recruitmaster
+					name = "James van Hyde"
+					skill = 2
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.20
+				}
+			}
+			option = {
+				name = james_gimmik_event_james_advisor.1.4
+				highlight = yes
+				ai_chance = { factor = 40 }
+				trigger = {
+					OR = {
+						treasury = 250
+						ai = yes
+					}
+				}
+				custom_tooltip = james_gimmik_event_james_advisor.1.4_tooltip
+				if = {
+					limit = { ai = no }
+					add_treasury = -250
+				}
+				hidden_effect = {
+					ROOT = {
+						country_event = {
+							id = james_gimmik_event_james_advisor.2
+							days = 30
+						}
+					}
+				}
+			}
+		}
+	#Researching about him
+		country_event = {
+			id = james_gimmik_event_james_advisor.2
+			title = james_gimmik_event_james_advisor.2.t
+			desc = james_gimmik_event_james_advisor.2.d
+			picture = {
+				trigger = {
+					ROOT = {
+						government = monarchy
+					}
+				}
+				picture = COURT_eventPicture
+			}
+			picture = {
+				trigger = {
+					ROOT = {
+						government = republic
+					}
+				}
+				picture = DEBATE_REPUBLICAN_eventPicture
+			}
+			picture = {
+				trigger = {
+					ROOT = {
+						government = theocracy
+					}
+				}
+				picture = RELIGION_eventPicture
+			}
+			picture = {
+				trigger = {
+					NOT = { government = monarchy }
+					NOT = { government = republic }
+					NOT = { government = theocracy }
+				}
+				picture = OVEREXTENSION_eventPicture
+			}
+
+			is_triggered_only = yes
+
+			trigger = {
+				exists = FRA
+				tag = FRA
+			}
+
+			option = {
+				name = james_gimmik_event_james_advisor.2.1
+				ai_chance = { factor = 1 }
+				trigger = {
+					always = yes
+				}
+				remove_country_modifier = james_fixed_modifier_james_advisor_CM.1
+				add_country_modifier = {
+					name = james_fixed_modifier_james_advisor_CM.2
+					duration = 18250
+				}
+			}
+		}

@@ -1,0 +1,70 @@
+﻿l_spanish:
+#############################
+# writen by: James van Hyde #
+#############################
+
+
+###################################################
+# Country Names, National idea Names,             #
+# Great Projects Names, Idea groups               #
+###################################################
+
+#Country Names
+
+#National idea Names
+
+#Great Project Names
+
+#Idea groups
+
+###################################################
+# Tradenode Names, Area Names, Province Names     #
+###################################################
+
+#Tradenode Names
+
+#Area Names
+
+#Province Names
+
+###################################################
+# Country triggered Modifiers,                    #
+# Province triggered Modifiers                    #
+###################################################
+
+#Country triggered Modifiers
+
+#Province triggered Modifiers
+
+
+###################################################
+# New Diplomatic Actions                          #
+###################################################
+
+#Category - (NAME)
+ #ZWISCHENTITEL
+ #: ""
+ #_title: ""
+ #_tooltip: ""
+ #_desc: ""
+
+###################################################
+# Fixed Modifers                                  #
+###################################################
+
+#Fixed Modifiers
+
+###################################################
+# Decisions                                       #
+###################################################
+
+#Decisions
+
+###################################################
+# Nations                                         #
+###################################################
+
+#Nation names
+
+#Nation Ideas
+ 

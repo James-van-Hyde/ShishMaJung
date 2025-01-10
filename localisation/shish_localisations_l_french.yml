@@ -1,0 +1,121 @@
+﻿l_french:
+#############################
+# writen by: James van Hyde #
+#############################
+
+
+###################################################
+# Country Names, National idea Names,             #
+# Great Projects Names, Idea groups               #
+###################################################
+
+#Country Names
+
+#National idea Names
+
+#Great Project Names
+ shish_holstentor: "Holstentor"
+ shish_frauenkirche_dresden: "Frauenkirche"
+ shish_dom_aachen: "Aachner Dom"
+ shish_la_mezquita: "Mezquita de Córdoba"
+ shish_tower_of_babel: "Turm von Babel"
+ shish_great_garden: "Hängende Gärten von babylon"
+ shish_hippodrom: "Hippodrom"
+ shish_colosseum: "Kolosseum"
+ shish_fort_cabana: "La Cabaña"
+ shish_statue_rhodos: "Koloss von Rhodos"
+ shish_theodoros_trion: "St. Theodoros Trion"
+ shish_walhalla_doors: "Tore von walhalla"
+ shish_el_dorado: "El Dorado"
+ shish_statue_genghis_khan: "Statue von Dschingis Khan"
+ shish_harbour_carthago: "Hafen von Karthargo"
+
+#Idea groups
+ shish_piracy_ideas: "Piraten Ideen"
+ shish_piracy_ideas_bonus: ""
+ shish_piracy_idea.1: "Sicherer Hafen"
+ shish_piracy_idea.1_desc: "Wir sind ein sicherer Hafen für jedwedes Gesocks, unser Versprechen für Besitzumverteilung motiviert, unsere "Seeleute" zu Höchstleistungen."
+ shish_piracy_idea.2: "Spontane Kaperbriefe"
+ shish_piracy_idea.2_desc: "Unsere Kapitäne werden oft für Diplomaten gehalten, nicht weil Sie so scharmant sind, sondern weil Sie mit Freuden Kaperbriefe an Ihre Freunde ausstellen."
+ shish_piracy_idea.3: "Piratenstreitereien"
+ shish_piracy_idea.3_desc: "Die unseren Bürger sind freudige und freie Diskussionen gewöhnt, die Streitgespräche unserer Regierung werden als Abendtätigkeit gerne beobachtet."
+ shish_piracy_idea.4: "Dort nach Da"
+ shish_piracy_idea.4_desc: "Unsere Seefahrer sind durch Ihre "Handelsfahrten" so erfahren das Sie, wohl unbewusst, eine unvorhergesehene Effizienz zeigen."
+ shish_piracy_idea.5: "Flachwasserholz"
+ shish_piracy_idea.5_desc: "Unser Schiffsbaumeister haben eine neue Verarbeitungsart für Holz gefunden, Sie nennen es "Flachwasserholz". Obgleich unsere Kosten damit verringert werden, riecht es einfach nur... verrottet?"
+ shish_piracy_idea.6: "Plus'N Met'ah!"
+ shish_piracy_idea.6_desc: "Die Küsten in unserer Reichweite sind schon fast leergeräumt, glücklicherweise hat sich dieses Problem nun scheinbar gelöst denn, Unsere Kapitäne fahren einfach noch ein wenig weiter raus!"
+ shish_piracy_idea.7: "Größer, Stärker... SCHIFF!"
+ shish_piracy_idea.7_desc: "Scheinbar hat ein betrunkener Kapitän mit einem Schiffsbaumeister gewettet, er könne kein größeres Schiff bauen als unser Flagschiff... Nun, der Kapitän hat verloren und wir haben bessere Baupläne für unsere Großschiffe..."
+
+###################################################
+# Tradenode Names, Area Names, Province Names     #
+###################################################
+
+#Tradenode Names
+
+#Area Names
+
+#Province Names
+
+###################################################
+# Country triggered Modifiers,                    #
+# Province triggered Modifiers                    #
+###################################################
+
+#Country triggered Modifiers
+
+#Province triggered Modifiers
+
+
+###################################################
+# New Diplomatic Actions                          #
+###################################################
+
+#Category - (NAME)
+ #ZWISCHENTITEL
+ #: ""
+ #_title: ""
+ #_tooltip: ""
+ #_desc: ""
+
+###################################################
+# Fixed Modifers                                  #
+###################################################
+
+#Fixed Modifiers
+
+###################################################
+# Decisions                                       #
+###################################################
+
+#Decisions
+
+###################################################
+# Nations                                         #
+###################################################
+
+#Nation names
+ KRT: "Karthago"
+ KRT_ADJ: "Karthagisch"
+ KRT_ADJ2: "Karthagisch"
+
+#Nation Ideas
+ KRT_ideas: "Kathagische Ideen"
+ KRT_ideas_bonus: "Karthagische Tradition"
+ KRT_ideas_start: "Karthagische Ambitionen"
+ krt_Idea_1: "Karthagische Schiffsbaukunst"
+ krt_Idea_1_desc: "Unsere Nation ist erbe einer Langen und erhabenen Tradition für Schiffsbau, daher können wir diese günstiger und besser Bauen."
+ krt_Idea_2: "Erben des Handels"
+ krt_Idea_2_desc: "Als erben der Phönizier ziehen wir Händler natürlich an."
+ krt_Idea_3: "Karthagische Kavallerie"
+ krt_Idea_3_desc: "Wir verfügen über starke Pferde mit einer Langen nachweislichen Geschichte."
+ krt_Idea_4: "Manufakturen Karthagos"
+ krt_Idea_4_desc: "Die Manufakturen Karthagos waren wichtige Produktionsstätten, die Waren wie Keramik, Textilien und Metallwaren herstellten und exportierten. Sie tragen erheblich zur wirtschaftlichen Stärke Karthagos bei."
+ krt_Idea_5: "Rad der Zeit"
+ krt_Idea_5_desc: "Durch die Lehren von Platon verstehen wir die Entwicklung der Zeit."
+ krt_Idea_6: "Karthagische Flotte"
+ krt_Idea_6_desc: "Weitläufige Reformen in der Marine haben zu einem verbesserten Seefahrstandard gesorgt."
+ krt_Idea_7: "Söldner & Sold"
+ krt_Idea_7_desc: "Durch Umgebung einiger Wertanlagen verfügen wir über mehr Geld für Externe Berater und Kommandanten für unser Militär... wer hätte gedacht das dies unserer Armee hilft?"
+ 

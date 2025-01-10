@@ -1,0 +1,44 @@
+KRT_ideas = {
+    start = {
+        naval_morale = 0.15
+        land_morale = 0.10
+
+  } 
+
+    bonus = {
+        production_efficiency = 0.10
+    }
+
+    trigger = {
+        tag = KRT
+    }
+    free = yes
+
+    krt_Idea_1 = {
+        galley_cost = -0.10
+        galley_power = 0.15
+    }
+    krt_Idea_2  = {
+        trade_efficiency = 0.10
+        global_trade_power = 0.10
+    }
+    krt_Idea_3  = {
+        cavalry_power = -0.20
+        cavalry_flanking = 0.15
+        cavalry_cost = 0.20
+    }
+   krt_Idea_4  = {
+        trade_goods_size_modifier = 0.10
+    }
+    krt_Idea_5  = {
+        technology_cost = -0.10
+    }
+    krt_Idea_6  = {
+        naval_forcelimit_modifier = 0.25
+        naval_tradition_from_battle = 0.50
+    }
+    krt_Idea_7  = {
+        discipline = 0.05
+        fire_damage_received = -0.05
+    }
+}

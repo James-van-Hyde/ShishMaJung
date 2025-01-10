@@ -1,0 +1,20 @@
+#########################################
+# Modifiers for the Discord Server:	    #
+# Haus van Hyde 						#
+# Written by: James van Hyde			#
+#########################################
+
+# namespace = HvH_fixed_modifier_FRA_CM
+# namespace = HvH_fixed_modifier_FRA_PM
+
+	#getting James van Hyde
+		#Länder Modifikatoren
+			james_fixed_modifier_james_advisor_CM.1 = {
+				prestige_decay = -0.005
+			}
+			james_fixed_modifier_james_advisor_CM.2 = {
+				prestige_decay = -0.01
+				global_tax_modifier = 0.1
+				trade_efficiency = 0.05
+				global_manpower_modifier = 0.05
+			}

@@ -1,0 +1,3213 @@
+#############################
+# writen by: James van Hyde #
+#############################
+shish_holstentor = {
+    # Province the project starts in
+    start = 45 #Lübeck
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 1478.1.1   #YYYY.MM.DD
+
+    time = {
+        months = 171
+    }
+
+    # How much it costs to build
+    build_cost = 500
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 0   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+        is_year = 1464
+    }
+
+    # What happens when the project is built
+    on_built = {
+        FROM = {
+            add_prestige = 20
+        }
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        FROM = {
+            add_prestige = -20
+        }
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        45 = {
+            culture_group = germanic
+            OR = {
+                has_owner_accepted_culture = yes
+                has_owner_culture = yes
+            }
+        }
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        45 = {
+            culture_group = germanic
+            OR = {
+                has_owner_accepted_culture = yes
+                has_owner_culture = yes
+            }
+        }
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+            province_trade_power_value = 0.20
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 60
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+            province_trade_power_value = 0.20
+            trade_goods_size = 0.20
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            trade_efficiency = 0.02
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 10
+            }
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 96
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1200
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+            province_trade_power_value = 0.40
+            trade_goods_size = 0.40
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            trade_efficiency = 0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+            }
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+            province_trade_power_value = 1.20
+            trade_goods_size_modifier = 0.10
+            local_development_cost_modifier = -0.10
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+            local_development_cost = -0.05
+            trade_goods_size_modifier = 0.10
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            trade_efficiency = 0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 20
+            }
+        }
+    }
+}
+shish_frauenkirche_dresden = {
+    # Province the project starts in
+    start = 61 #dresden
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 1743.1.1   #YYYY.MM.DD
+
+    time = {
+        months = 210
+    }
+
+    # How much it costs to build
+    build_cost = 1500
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 1   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+        is_year = 1726
+    }
+
+    # What happens when the project is built
+    on_built = {
+        FROM = {
+            add_prestige = 20
+        }
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        FROM = {
+            add_prestige = -20
+        }
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        61 = {
+            has_owner_religion = yes
+            owner = {
+                OR = {
+                    religion = protestant
+                    religion = reformed
+                    religion = hussite
+                }
+            }
+        }
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        61 = {
+            has_owner_religion = yes
+            owner = {
+                OR = {
+                    religion = protestant
+                    religion = reformed
+                    religion = hussite
+                }
+            }
+        }
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+        religion_group = christian
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            tolerance_own = 0.25
+            monthly_fervor_increase = 0.02
+            monthly_church_power = 0.02
+            may_recruit_female_generals = yes
+            female_advisor_chance = 0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 10
+            }
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            tolerance_own = 0.5
+            monthly_fervor_increase = 0.05
+            monthly_church_power = 0.05
+            may_recruit_female_generals = yes
+            female_advisor_chance = 0.15
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+            }
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 480
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 5000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            tolerance_own = 1
+            monthly_fervor_increase = 0.10
+            monthly_church_power = 0.10
+            may_recruit_female_generals = yes
+            female_advisor_chance = 0.20
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 20
+            }
+        }
+    }
+}
+shish_dom_aachen = {
+    # Province the project starts in
+    start = 1878 #Aachen
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 802.7.17   #YYYY.MM.DD
+
+    time = {
+        months = 125 #120 > 795 - 803 nChr.
+    }
+
+    # How much it costs to build
+    build_cost = 0
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 1   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+    }
+
+    # What happens when the project is built
+    on_built = {
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        1878 = {
+            has_owner_religion = yes
+            owner = {
+                religion_group = christian
+            }
+        }
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        1878 = {
+            has_owner_religion = yes
+            owner = {
+                religion_group = christian
+            }
+        }
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            papal_influence = 0.50
+            church_power_modifier = 0.05
+            monthly_fervor_increase = 0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 10
+            }
+        }
+        conditional_modifier = {
+            trigger = {
+                is_emperor = yes
+            }
+            modifier = {
+                imperial_authority_value = 0.02
+                prestige = 0.05
+            }
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            papal_influence = 1
+            church_power_modifier = 0.10
+            monthly_fervor_increase = 0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+            }
+        }
+        conditional_modifier = {
+            trigger = {
+                is_emperor = yes
+            }
+            modifier = {
+                imperial_authority_value = 0.05
+                prestige = 0.10
+            }
+        }
+        conditional_modifier = {
+            trigger = {
+                tag = HLR
+                government_rank = 3
+                AND = {
+                    owns = 45
+                    owns = 85
+                    owns = 50
+                    owns = 134
+                    owns = 1876
+                }
+            }
+            modifier = {
+                legitimacy = 1
+                devotion = 1
+                prestige = 0.10
+                can_claim_states = yes
+            }
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 480
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 5000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            papal_influence = 2
+            church_power_modifier = 0.20
+            monthly_fervor_increase = 0.20
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 20
+            }
+        }
+        conditional_modifier = {
+            trigger = {
+                is_emperor = yes
+            }
+            modifier = {
+                imperial_authority_value = 0.10
+                prestige = 0.20
+            }
+        }
+        conditional_modifier = {
+            trigger = {
+                tag = HLR
+                government_rank = 3
+                AND = {
+                    owns = 45
+                    owns = 85
+                    owns = 50
+                    owns = 134
+                    owns = 1876
+                }
+            }
+            modifier = {
+                governing_capacity_modifier = 0.10
+                legitimacy = 1
+                devotion = 1
+                prestige = 0.20
+                can_claim_states = yes
+            }
+        }
+    }
+}
+shish_la_mezquita = {
+    # Province the project starts in
+    start = 225 #Córdoba
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 784.1.1   #YYYY.MM.DD
+
+    time = {
+        months = 0
+    }
+
+    # How much it costs to build
+    build_cost = 0
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 1   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+    }
+
+    # What happens when the project is built
+    on_built = {
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        has_owner_religion = yes
+        owner = {
+            OR = {
+                religion_group = muslim
+                religion_group = christian
+            }
+        }
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        has_owner_religion = yes
+        owner = {
+            OR = {
+                religion_group = muslim
+                religion_group = christian
+            }
+        }
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            global_missionary_strength = 0.05
+            warscore_cost_vs_other_religion = -0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            global_missionary_strength = 0.10
+            warscore_cost_vs_other_religion = -0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+        conditional_modifier = {
+            trigger = {
+                has_owner_religion = yes
+                Owner = {
+                    OR = {
+                        religion = catholic
+                        religion = sunni
+                    }
+                }
+            }
+            modifier = {
+                missionary_maintenance_cost = -0.20
+                tolerance_heathen = -1
+            }
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 480
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 5000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            global_missionary_strength = 0.10
+            warscore_cost_vs_other_religion = -0.10
+            missionaries = 1
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+            }
+        }
+        conditional_modifier = {
+            trigger = {
+                has_owner_religion = yes
+                Owner = {
+                    OR = {
+                        religion = catholic
+                        religion = sunni
+                    }
+                }
+            }
+            modifier = {
+                prestige_per_development_from_conversion = 1.5
+                missionary_maintenance_cost = -0.35
+                tolerance_heathen = -5
+                may_convert_territories = yes
+            }
+        }
+    }
+}
+shish_tower_of_babel = {
+    # Province the project starts in
+    start = 2311 #Samawat
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 5.1.1   #YYYY.MM.DD 689 v. Chr.
+
+    time = {
+        months = 0
+    }
+
+    # How much it costs to build
+    build_cost = 0
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 2   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+    }
+
+    # What happens when the project is built
+    on_built = {
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            build_time = -0.10
+            global_institution_spread = 0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            build_time = -0.20
+            global_institution_spread = 0.20
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 480
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 5000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            build_time = -0.20
+            global_institution_spread = 0.20
+            idea_cost = -0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+            }
+        }
+    }
+}
+shish_great_garden = {
+    # Province the project starts in
+    start = 410 #Baghdad
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 5.1.1   #YYYY.MM.DD
+
+    time = {
+        months = 0
+    }
+
+    # How much it costs to build
+    build_cost = 0
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 0   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+    }
+
+    # What happens when the project is built
+    on_built = {
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            global_tax_modifier = 0.10
+            embracement_cost = -0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            global_tax_modifier = 0.15
+            embracement_cost = -0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 480
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 5000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            global_tax_modifier = 0.25
+            embracement_cost = -0.20
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+            }
+        }
+    }
+}
+shish_hippodrom = {
+    # Province the project starts in
+    start = 151 #Constantinople
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 5.1.1   #YYYY.MM.DD
+
+    time = {
+        months = 0
+    }
+
+    # How much it costs to build
+    build_cost = 0
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 1   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+    }
+
+    # What happens when the project is built
+    on_built = {
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        has_owner_religion = yes
+        owner = {
+            religion = orthodox
+        }
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        has_owner_religion = yes
+        owner = {
+            religion = orthodox
+        }
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            cavalry_power = 0.10
+            cavalry_cost = -0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            cavalry_power = 0.15
+            cavalry_cost = -0.15
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 480
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 5000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            cavalry_power = 0.20
+            cavalry_cost = -0.15
+            cavalry_flanking = 0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+            }
+        }
+    }
+}
+shish_colosseum = {
+    # Province the project starts in
+    start = 118 #Rom
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 5.1.1   #YYYY.MM.DD
+
+    time = {
+        months = 0
+    }
+
+    # How much it costs to build
+    build_cost = 0
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 2   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+    }
+
+    # What happens when the project is built
+    on_built = {
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        has_owner_religion = yes
+        owner = {
+            OR = {
+                religion_group = christian
+                tag = RUM
+            }
+        }
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        has_owner_religion = yes
+        owner = {
+            OR = {
+                religion_group = christian
+                tag = RUM
+            }
+        }
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            land_morale = 0.05
+            global_manpower_modifier = 0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            land_morale = 0.05
+            global_manpower_modifier = 0.10
+            land_forcelimit = 0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 480
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 5000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            land_morale = 0.10
+            global_manpower_modifier = 0.15
+            land_forcelimit = 0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+            }
+        }
+        conditional_modifier = {
+            trigger = {
+                is_emperor = yes
+            }
+            modifier = {
+                imperial_authority_value = 0.10
+                prestige = 0.20
+            }
+        }
+    }
+}
+shish_fort_cabana = {
+    # Province the project starts in
+    start = 484 #Havana
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 1763.1.1   #YYYY.MM.DD
+
+    time = {
+        months = 135 #132 > 1763 - 1774
+    }
+
+    # How much it costs to build
+    build_cost = 5000
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 2   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+        is_year = 1763
+    }
+
+    # What happens when the project is built
+    on_built = {
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+            hostile_fleet_attrition = 0.10
+            hostile_disembark_speed = 0.20
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            defensiveness = 0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+            hostile_fleet_attrition = 0.20
+            hostile_disembark_speed = 0.50
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            defensiveness = 0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 480
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 5000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+            hostile_fleet_attrition = 0.30
+            hostile_disembark_speed = 1
+            blockade_force_required = 0.5
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            defensiveness = 0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+            }
+        }
+    }
+}
+shish_statue_rhodos = {
+    # Province the project starts in
+    start = 320 #Rhodes
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 5.1.1   #YYYY.MM.DD
+
+    time = {
+        months = 0
+    }
+
+    # How much it costs to build
+    build_cost = 0
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 0   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+    }
+
+    # What happens when the project is built
+    on_built = {
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        has_owner_religion = yes
+        OR = {
+            has_owner_accepted_culture = yes
+            has_owner_culture = yes
+        }
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        has_owner_religion = yes
+        OR = {
+            has_owner_accepted_culture = yes
+            has_owner_culture = yes
+        }
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            garrison_size = 0.10
+            defensiveness = 0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            garrison_size = 0.10
+            defensiveness = 0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 480
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 5000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            garrison_size = 0.15
+            defensiveness = 0.15
+            trade_range_modifier = 0.15
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+            }
+        }
+    }
+}
+shish_theodoros_trion = {
+    # Province the project starts in
+    start = 2410 #Theodoro
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 1453.10.25   #YYYY.MM.DD
+
+    time = {
+        months = 125 #120 > 8 Jahre
+    }
+
+    # How much it costs to build
+    build_cost = 450
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 1   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+        is_year = 1453
+    }
+
+    # What happens when the project is built
+    on_built = {
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        has_owner_religion = yes
+        culture = goths
+        owner = {
+            religion = orthodox
+            OR = {
+                accepted_culture = goths
+                primary_culture = goths
+            }
+        }
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        has_owner_religion = yes
+        culture = goths
+        owner = {
+            religion = orthodox
+            OR = {
+                accepted_culture = goths
+                primary_culture = goths
+            }
+        }
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            yearly_patriarch_authority = 0.005
+            defensiveness = 0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            yearly_patriarch_authority = 0.01
+            defensiveness = 0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 480
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 5000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            yearly_patriarch_authority = 0.01
+            defensiveness = 0.15
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+            }
+        }
+    }
+}
+shish_walhalla_doors = {
+    # Province the project starts in
+    start = 370 #Reykjavik
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 5.1.1   #YYYY.MM.DD
+
+    time = {
+        months = 0
+    }
+
+    # How much it costs to build
+    build_cost = 0
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 2   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+    }
+
+    # What happens when the project is built
+    on_built = {
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        owner = {
+            religion = norse_pagan_reformed
+        }
+        has_owner_religion = yes
+        culture = norse
+        province_is_or_accepts_culture = yes
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        has_owner_religion = yes
+        OR = {
+            has_owner_accepted_culture = yes
+            has_owner_accepted_culture = yes
+        }
+        owner = {
+            religion = norse_pagan_reformed
+            OR = {
+                accepted_culture = norse
+                primary_culture = norse
+            }
+        }
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            shock_damage_received = -0.05
+            shock_damage = 0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            shock_damage_received = -0.05
+            shock_damage = 0.05
+            infantry_power = 0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 480
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 15000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            shock_damage_received = -0.05
+            shock_damage = 0.05
+            infantry_power = 0.10
+            land_morale = 0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 35
+            }
+        }
+        conditional_modifier = {
+            trigger = {
+                owner = {
+                    mil = 6
+                    employed_advisor = {
+                        category = MIL
+                        religion = norse_pagan_reformed
+                        culture = norse
+                    }
+                    OR = {
+                        AND = {
+                            commandant = 5
+                            ruler_has_personality = inspiring_leader_personality
+                        }
+                        AND = {
+                            army_reformer = 5
+                            ruler_has_personality = strict_personality
+                        }
+                    }
+                }
+            }
+            modifier = {
+                land_morale = 0.05
+                discipline = 0.05
+                morale_damage = 0.10
+            }
+        }
+    }
+}
+shish_el_dorado = {
+    # Province the project starts in
+    start = 2810 #Apure
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 5.1.1   #YYYY.MM.DD
+
+    time = {
+        months = 0
+    }
+
+    # How much it costs to build
+    build_cost = 0
+
+    # If the project can be moved
+    can_be_moved = yes   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 15
+
+    # Starting tier of the project
+    starting_tier = 3   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+    }
+
+    # What happens when the project is built
+    on_built = {
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        has_owner_religion = yes
+        OR = {
+            has_owner_accepted_culture = yes
+            has_owner_culture = yes
+        }
+        owner = {
+            has_idea_group = exploration_ideas
+        }
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        has_owner_religion = yes
+        OR = {
+            has_owner_accepted_culture = yes
+            has_owner_culture = yes
+        }
+        owner = {
+            has_idea_group = exploration_ideas
+        }
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            yearly_corruption = -0.05
+            inflation_reduction = 0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            yearly_corruption = -0.10
+            inflation_reduction = 0.10
+            gold_depletion_chance_modifier = -0.25
+            monthly_gold_inflation_modifier = -0.25
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 480
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 8500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            yearly_corruption = -0.10
+            inflation_reduction = 0.10
+            gold_depletion_chance_modifier = -0.50
+            monthly_gold_inflation_modifier = -0.50
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+            }
+        }
+        conditional_modifier = {
+            trigger = {
+                is_great_power = yes
+                owner = {
+                    total_development = 1500
+                    government_rank = 3
+                    has_custom_ideas = no
+                    NOT = { tag = FRA }
+                }
+            }
+            modifier = {
+                allow_mercenaries_to_split = yes
+                allow_mercenary_drill = yes
+                merc_independent_from_trade_range = yes
+                mercenary_manpower = 0.15
+                mercenary_cost = 0.20
+                mercenary_discipline = 0.05
+                merc_leader_army_tradition = 0.25
+            }
+        }
+    }
+}
+shish_statue_genghis_khan = {
+    # Province the project starts in
+    start = 4668 #West Ih Huree (no joke it says that)
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 5.1.1   #YYYY.MM.DD
+
+    time = {
+        months = 0
+    }
+
+    # How much it costs to build
+    build_cost = 0
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 1   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+    }
+
+    # What happens when the project is built
+    on_built = {
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        has_owner_religion = yes
+        owner = {
+            uses_horde_unity = yes
+            religion = tengri_pagan_reformed
+        }
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        has_owner_religion = yes
+        owner = {
+            uses_horde_unity = yes
+            religion = tengri_pagan_reformed
+        }
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            cavalry_power = 0.05
+            ae_impact = -0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            cavalry_power = 0.10
+            ae_impact = -0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 480
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 5000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            cavalry_power = 0.15
+            ae_impact = -0.15
+            cavalry_cost = -0.20
+            cavalry_flanking = 0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+            }
+        }
+        conditional_modifier = {
+            trigger = {
+                owner = {
+                    government_rank = 3
+                }
+            }
+            modifier = {
+                global_tax_modifier = 0.10
+                prestige = 0.05
+            }
+        }
+    }
+}
+shish_harbour_carthago = {
+    # Province the project starts in
+    start = 341 #Tunis
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 5.1.1   #YYYY.MM.DD
+
+    time = {
+        months = 0
+    }
+
+    # How much it costs to build
+    build_cost = 0
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 2   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+    }
+
+    # What happens when the project is built
+    on_built = {
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        owner = {
+            NOT = { tag = PAP }
+            NOT = { tag = ROM }
+            NOT = { is_part_of_hre = yes }
+        }
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        owner = {
+            NOT = { tag = PAP }
+            NOT = { tag = ROM }
+            NOT = { is_part_of_hre = yes }
+        }
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            global_trade_power = 0.05
+            naval_forcelimit_modifier = 0.10
+            light_ship_power = 0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            global_trade_power = 0.10
+            naval_forcelimit_modifier = 0.15
+            light_ship_power = 0.10
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 480
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 6000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            global_trade_power = 0.15
+            naval_forcelimit_modifier = 0.20
+            light_ship_power = 0.15
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+            }
+        }
+    }
+}

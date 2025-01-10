@@ -1,0 +1,75 @@
+#Country Name: Please see filename.
+
+graphical_culture = africangfx
+
+color = { 234  230  210 }
+
+revolutionary_colors = { 9 1 8 }
+
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	religious_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	spy_ideas
+	trade_ideas	
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Dido Èlyssa #1" = -1
+	"Hanno #3" = 50
+	"Malchus #1" = 45
+	"Mago #1" = 45
+	"Hasdrubal #1" = 40
+	"Hamilkar Barkas #1" = 20
+	"Hannibal #1" = 30
+	"Himilkon #1" = 30
+	"Gisco #1" = 30
+	"Hamilkar #1" = 45
+	"Bomilkar #1" = 30
+	"Johannes der #5 Römer" = 5
+}
+
+leader_names = {
+	Barca
+	Hanno
+	Magon
+	Hasdrubal
+	Gisco
+	Bomilkar
+}
+
+ship_names = {
+	"Hannibals Stolz" "Phoenizische Flamme" "Karthagische Löwin" "Sapheris Glorie"
+	"Tyrians Schild" "Batucars Segen" Hamilakara "Magos Triumph"
+	"Hasdrubal’s Triumph" "Blitz von Melqart"
+}
+
+
+army_names = {
+	"Armee von $PROVINCE$" "Schild von Baal" "Hasdrubals Klinge"
+}
+
+fleet_names = {
+	"Carthage Armada"
+}
