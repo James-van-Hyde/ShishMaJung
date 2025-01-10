@@ -1,0 +1,219 @@
+#############################
+# writen by: Leopold Friedrich xoxo #
+#############################
+leo_wallstreet = {
+    # Province the project starts in
+    start = 965 #Manhatten
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 1647.1.1   #YYYY.MM.DD
+
+    time = {
+        months = 120
+    }
+
+    # How much it costs to build
+    build_cost = 2500
+
+    # If the project can be moved
+    can_be_moved = no   #yes/no
+
+    # How long the moving of the province takes
+	move_days_per_unit_distance = 10
+
+    # Starting tier of the project
+    starting_tier = 2   #0/1/2/3
+
+    # Project type
+    type = monument     #canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+        is_year = 1444
+    }
+
+    # What happens when the project is built
+    on_built = {
+        FROM = {
+            add_prestige = 30
+            add_mercantilism = 10
+        }
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        OR = {
+            has_owner_accepted_culture = yes
+            has_owner_culture = yes
+        }
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        OR = {
+            has_owner_accepted_culture = yes
+            has_owner_culture = yes
+        }
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 0
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+            province_trade_power_value = 0.20
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 120
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 1000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+            province_trade_power_value = 0.20
+            trade_goods_size = 0.20
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            trade_efficiency = 0.02
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 10
+                add_mercantilism = 2
+            }
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240    
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2500
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+            province_trade_power_value = 0.40
+            trade_goods_size = 0.40
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            trade_efficiency = 0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 15
+                add_mercantilism = 2
+            }
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 500
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 5000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+            province_trade_power_value = 1.20
+            trade_goods_size_modifier = 0.10
+            local_development_cost_modifier = -0.10
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+            local_development_cost = -0.05
+            trade_goods_size_modifier = 0.10
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            trade_efficiency = 0.05
+        }
+
+        # What modifiers are given to the region of the province the project is located in
+        region_modifier = {
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            owner = {
+                add_prestige = 20
+                add_mercantilism = 2
+            }
+        }
+    }
+}
