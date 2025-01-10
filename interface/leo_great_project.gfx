@@ -1,0 +1,11 @@
+#############################
+# writen by: Leopold Friedrich xoxo #
+#############################
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_great_project_leo_wallstreet"	
+		texturefile = "gfx//interface//great_projects//great_project_leo_wallstreet.dds"
+	}
+	
+}
