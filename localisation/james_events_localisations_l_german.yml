@@ -3,26 +3,13 @@
 # writen by: James van Hyde #
 #############################
 
-#set Strings
- string_james_custom_username_1: "James van Hyde"
- string_james_custom_username_2: "ShishaTroniker"
- string_james_custom_username_3: ""
- string_james_custom_username_4: ""
- string_james_custom_username_5: ""
- string_james_custom_username_6: ""
- string_james_custom_username_7: ""
- string_james_custom_username_8: ""
- string_james_custom_username_9: ""
- string_james_custom_username_10: ""
-
-
 ###################################################
 # Gimmik Events                                   #
 ###################################################
 
 #getting James van Hyde
  james_gimmik_event_james_advisor.1.t: "Bonjour - James van Hyde"
- james_gimmik_event_james_advisor.1.d: "Ein Mann, der scheinbar genau weis, wie man sich in unserem Palast zurechtfindet und laut den verschiedensten aussagen von angestelltem Personal schon immer durch unseren Regierungssitz gewandert ist hat, mit der aussage "Dank der großzügigen Gastfreundschaft dieses Landes habe ich sehr vieles gelernt, ich denke nun ist die Zeit gekommen das ich mich dafür revanchiere.", unserem obersten Staatsverwalter angeboten diesem Land für eine Lebensspanne, als Berater zu dienen.[HvHIndikatorReference][HvHCustomReference2]"
+ james_gimmik_event_james_advisor.1.d: "Ein Mann, der scheinbar genau weis, wie man sich in unserem Palast zurechtfindet und laut den verschiedensten aussagen von angestelltem Personal schon immer durch unseren Regierungssitz gewandert ist hat, mit der aussage "Dank der großzügigen Gastfreundschaft dieses Landes habe ich sehr vieles gelernt, ich denke nun ist die Zeit gekommen das ich mich dafür revanchiere.", unserem obersten Staatsverwalter angeboten diesem Land für eine Lebensspanne, als Berater zu dienen.[JamesIndikatorReference][JamesCustomReference2]"
  james_gimmik_event_james_advisor.1.1: "£adm£...er könnte unserem Schatzmeister helfen."
  james_gimmik_event_james_advisor.1.2: "£dip£...er könnte unserer Handelskammer helfen."
  james_gimmik_event_james_advisor.1.3: "£mil£...er könnte Rekrutierungsverträge machen."
@@ -39,3 +26,31 @@
  desc_james_fixed_modifier_james_advisor_CM.1: "Ein seltsamer Mann wandert sorglos und scheinbar frei von allen beschränkungen durch unseren Regierungssitz... \n\nUnterhält er sich da gerade mit dem Schatzmeister?"
  james_fixed_modifier_james_advisor_CM.2: "Verstimmter Mod Entwickler "
  desc_james_fixed_modifier_james_advisor_CM.2: "Wir haben herausgefunden das der seltsame Mann, oder "Mod Entwickler" wie er sich selber nennt, schon in den frühsten unserer Aufzeichnungen Erwähnung fand.\nEr hat scheinbar seit jeher frei mit unseren Würdenträgern gesprochen und unsere Staatsbibliotheken durchkämmt.\nWas wir dazu nutzten um ihm und seinem Angebot weitere Zugeständnisse an uns abzuringen.\n\nEr erwähnte außerdem irgendwas davon das man ihm diese Freiheit nicht nehmen könne da wir keine "Spieleentwickler" wären... Ist dieser Mann vielleicht doch nur ein verrückter?"
+
+#RattenPEST
+ james_gimmik_event_rattenpest.1.t: "Oh Nein! Die RattenPEST hat uns erwischt!"
+ james_gimmik_event_rattenpest.1.d: "Es scheint, als ob sich in unserem Reich eine Rattenpest verbreitet, die Auswirkungen scheinen sich jedoch auf unsere ohne hin Entwicklungsachswachen Provinzen zu beschränken..."
+ james_gimmik_event_rattenpest.1.1: "Investieren wir ein wenig in Seuchenschutz..."
+ james_gimmik_event_rattenpest.1.2: "...Zum glück wohn ich in einem Palast"
+ james_gimmik_event_rattenpest.1.3: "...gibt es keine möglichkeit dies zu unserem Vorteil zu nutzen?..."
+ 
+ #Second Event
+ james_gimmik_event_rattenpest.2.t: "Die Kosten der RattenPEST"
+ james_gimmik_event_rattenpest.2.d: "Nachdem die Rattenpest nun einige jahre in unserem Land gewütet hat scheinen unsere Maßnamen sich bezahlt zu machen... unglücklicherweiße scheint es als müssten wir noch einige Entschädigungen auszahlen..."
+ james_gimmik_event_rattenpest.2.1: "Bezahlen wir halt die Leute."
+ james_gimmik_event_rattenpest.2.2: "...bezahlen wir nur die Adligen."
+ james_gimmik_event_rattenpest.2.3: "...profit?..."
+ james_gimmik_event_rattenpest.2.4: "Unsere Seuchenschutzmaßnahmen waren von vornherein ausreichend!"
+
+ #RattenPest FIX
+ james_gimmik_event_rattenpest.3.t: "Es scheint... was ist die RattenPEST?"
+ james_gimmik_event_rattenpest.3.d: "Scheinbar sind einige unserer neuen Provinzen von einer Art Rattenpest befallen, wir müssen wohl ein wenig Geld aufbringen, um diese zu bekämpfen."
+ james_gimmik_event_rattenpest.3.1: "Toll... Almosen für die unwichtigen..."
+
+ #Modifiers
+ james_CM_rattenpest.1: "Ratten Èlan"
+ desc_james_CM_rattenpest.1: ""
+ james_PM_rattenpest.1: "Die RattenPEST"
+ desc_james_PM_rattenpest.1: ""
+ james_PM_rattenpest.2: "Die Wilde RattenPEST"
+ desc_james_PM_rattenpest.2: ""

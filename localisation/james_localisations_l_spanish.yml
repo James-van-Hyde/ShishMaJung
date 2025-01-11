@@ -3,6 +3,27 @@
 # writen by: James van Hyde #
 #############################
 
+#Fixed Text - James indikators/subtitles  (lookup /customizable_localization/james_custum_localization.txt)
+
+ string_james_custom_indikator_reference: "\n\n§BReferenz§!\n"
+ string_james_custom_indikator_attention: "\n\n§RAttention§!\n"
+
+#Fixed Text - James usernames (lookup /customizable_localization/james_custum_localization.txt)
+
+ string_james_custom_username_1: "James van Hyde"
+ string_james_custom_username_2: "ShishaTroniker"
+ string_james_custom_username_3: "Leopold"
+ string_james_custom_username_4: ""
+ string_james_custom_username_5: ""
+ string_james_custom_username_6: ""
+ string_james_custom_username_7: ""
+ string_james_custom_username_8: ""
+ string_james_custom_username_9: ""
+ string_james_custom_username_10: ""
+
+#Fixed Text - James references
+ #Bonjour (Moddeveloper)
+ string_james_custom_reference_2: "Der Modentwickler [JamesCustomUsername1] hat die ersten 1.700 Stunden Spielzeit größtenteils (~80%) nur mit Frankreich angesammelt/gespielt. (Funfact: er fand unter anderem dadurch erst mit 1.700 Stunden heraus wie die Frontbreite funktioniert!)"
 
 ###################################################
 # Country Names, National idea Names,             #
