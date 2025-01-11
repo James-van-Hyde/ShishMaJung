@@ -1,0 +1,28 @@
+#########################################
+# Written by: James van Hyde			#
+#########################################
+#
+# When adding effects directly in on_actions always consider if it would be best to do so through a scripted effect. 
+# on_actions with a lot of script in them are harder to get an overview of.
+#
+# country scope
+
+on_startup = {
+	#Usernames > keys (Usable for advisors etc)
+		set_saved_name = {
+			key = james_startup_custom_username_1
+			type = simple
+			name = "James van Hyde"
+		}
+		set_saved_name = {
+			key = james_startup_custom_username_2
+			type = simple
+			name = "ShishaTroniker"
+		}
+		set_saved_name = {
+			key = james_startup_custom_username_3
+			type = simple
+			name = "Leopold"
+		}
+		
+}
