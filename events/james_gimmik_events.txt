@@ -2,7 +2,7 @@
 # Written by: James van Hyde			#
 #########################################
 
-namespace = james_gimmik_event_rattenmesser
+namespace = james_gimmik_event_rattenpest
 namespace = james_gimmik_event_james_advisor
 
 #getting James van Hyde
@@ -149,6 +149,284 @@ namespace = james_gimmik_event_james_advisor
 				add_country_modifier = {
 					name = james_fixed_modifier_james_advisor_CM.2
 					duration = 18250
+				}
+			}
+		}
+#RattenPEST
+	#Main Event
+		country_event = {
+			id = james_gimmik_event_rattenpest.1
+			title = james_gimmik_event_rattenpest.1.t
+			desc = james_gimmik_event_rattenpest.1.d
+			picture = FAMINE_eventPicture
+
+			major = yes
+			major_trigger = { ai = no }
+
+			trigger = {
+				ai = no
+				NOT = { stability = 2 }
+				NOT = { has_country_flag = had_rattenpest }
+			}
+
+			immediate = {
+				hidden_effect = {
+					country_event = {
+						id = james_gimmik_event_rattenpest.2
+						days = 730
+					}
+				}
+			}
+			mean_time_to_happen = {
+				months = 600
+			
+				modifier = {
+					factor = 0.7
+					NOT = { stability = 0 }
+				}
+			}
+			option = {
+				name = james_gimmik_event_rattenpest.1.1
+				ai_chance = { factor = 60 }
+				add_treasury = -200
+				every_owned_province = {
+					if = {
+						limit =  { NOT = {development = 8} }
+						add_province_modifier = {
+							name = james_PM_rattenpest.1
+							duration = -1
+						}
+					}
+				}
+				hidden_effect = {
+					set_country_flag = active_rattenpest_tier1
+				}
+			}
+			option = {
+				name = james_gimmik_event_rattenpest.1.2
+				ai_chance = { factor = 30 }
+				every_owned_province = {
+					if = {
+						limit =  { NOT = {development = 12} }
+						add_province_modifier = {
+							name = james_PM_rattenpest.2
+							duration = -1
+						}
+					}
+				}
+				hidden_effect = {
+					set_country_flag = active_rattenpest_tier2
+				}
+			}
+			option = {
+				name = james_gimmik_event_rattenpest.1.3
+				ai_chance = { factor = 10 }
+				trigger = {
+					innovativeness = 8
+				}
+				add_prestige = -10
+				every_owned_province = {
+					if = {
+						limit =  { NOT = {development = 12} }
+						add_province_modifier = {
+							name = james_PM_rattenpest.2
+							duration = -1
+						}
+					}
+				}
+				hidden_effect = {
+					set_country_flag = active_rattenpest_tier3
+				}
+			}
+		}
+	#Second Event
+		country_event = {
+			id = james_gimmik_event_rattenpest.2
+			title = james_gimmik_event_rattenpest.2.t
+			desc = james_gimmik_event_rattenpest.2.d
+			picture = OVEREXTENSION_eventPicture
+
+			major = no
+			major_trigger = { ai = no }
+
+			is_triggered_only = yes
+			trigger = {
+			}
+
+			immediate = {
+			}
+			#mean_time_to_happen = {
+			#	months = 600
+			#
+			#	modifier = {
+			#		factor = 0.7
+			#		NOT = { stability = 0 }
+			#	}
+			#}
+			option = {
+				name = james_gimmik_event_rattenpest.2.1
+				ai_chance = { factor = 60 }
+				trigger = {
+					any_owned_province = {
+						has_province_modifier = james_PM_rattenpest.1
+					}
+				}
+				every_owned_province = {
+					if = {
+						limit =  { has_province_modifier = james_PM_rattenpest.1 }
+						remove_province_modifier = james_PM_rattenpest.1
+						add_random_development = -1
+					}
+				}
+				if = {
+					limit = { ai = no }
+					add_treasury = -250
+				}
+				add_prestige = 20
+				hidden_effect = {
+					clr_country_flag = active_rattenpest_tier1
+					set_country_flag = had_rattenpest
+				}
+			}
+			option = {
+				name = james_gimmik_event_rattenpest.2.2
+				ai_chance = { factor = 30 }
+				trigger = {
+					any_owned_province = {
+						has_province_modifier = james_PM_rattenpest.2
+					}
+					has_country_flag = active_rattenpest_tier2
+				}
+				every_owned_province = {
+					if = {
+						limit =  { has_province_modifier = james_PM_rattenpest.2 }
+						remove_province_modifier = james_PM_rattenpest.2
+						add_random_development = -3
+					}
+				}
+				if = {
+					limit = { ai = no }
+					add_treasury = -300
+				}
+				hidden_effect = {
+					clr_country_flag = active_rattenpest_tier2
+					set_country_flag = had_rattenpest
+				}
+			}
+			option = {
+				name = james_gimmik_event_rattenpest.2.3
+				ai_chance = { factor = 10 }
+				trigger = {
+					any_owned_province = {
+						has_province_modifier = james_PM_rattenpest.2
+					}
+					has_country_flag = active_rattenpest_tier3
+				}
+				every_owned_province = {
+					if = {
+						limit =  { has_province_modifier = james_PM_rattenpest.2 }
+						remove_province_modifier = james_PM_rattenpest.2
+					}
+				}
+				if = {
+					limit = { ai = no }
+					add_treasury = -800
+				}
+				add_country_modifier = {
+					name = james_CM_rattenpest.1
+					duration = 1825
+				}
+				add_prestige = 30
+				hidden_effect = {
+					clr_country_flag = active_rattenpest_tier2
+					set_country_flag = had_rattenpest
+				}
+			}
+			option = {
+				name = james_gimmik_event_rattenpest.2.4
+				ai_chance = { factor = 10 }
+				trigger = {
+					all_owned_province = {
+							NOT = { has_province_modifier = james_PM_rattenpest.1 }
+							NOT = { has_province_modifier = james_PM_rattenpest.2 }
+					}
+					OR = {
+					has_country_flag = active_rattenpest_tier1
+					has_country_flag = active_rattenpest_tier2
+					has_country_flag = active_rattenpest_tier3
+					}
+				}
+				every_owned_province = {
+					if = {
+						limit =  { has_province_modifier = james_PM_rattenpest.2 }
+						remove_province_modifier = james_PM_rattenpest.2
+					}
+				}
+				add_country_modifier = {
+					name = james_CM_rattenpest.1
+					duration = 365
+				}
+				add_prestige = 30
+				hidden_effect = {
+					clr_country_flag = active_rattenpest_tier1
+					clr_country_flag = active_rattenpest_tier2
+					clr_country_flag = active_rattenpest_tier3
+					set_country_flag = had_rattenpest
+				}
+			}
+		}
+	#Save Fix
+		country_event = {
+			id = james_gimmik_event_rattenpest.3
+			title = james_gimmik_event_rattenpest.3.t
+			desc = james_gimmik_event_rattenpest.3.d
+			picture = WESTERNISATION_eventPicture
+
+			major = no
+			major_trigger = { ai = no }
+
+			trigger = {
+				NOT = { has_country_flag = active_rattenpest_tier1 }
+				NOT = { has_country_flag = active_rattenpest_tier2 }
+				NOT = { has_country_flag = active_rattenpest_tier3 }
+				any_owned_province = {
+					OR = {
+						has_province_modifier = james_PM_rattenpest.1
+						has_province_modifier = james_PM_rattenpest.2
+					}
+				}
+			}
+
+			immediate = {
+			}
+			mean_time_to_happen = {
+				months = 6
+			
+				modifier = {
+					factor = 0.5
+					stability = 1
+				}
+			}
+			option = {
+				name = james_gimmik_event_rattenpest.3.1
+				ai_chance = { factor = 60 }
+				trigger = {
+				}
+				every_owned_province = {
+					if = {
+						limit =  { has_province_modifier = james_PM_rattenpest.1 }
+						remove_province_modifier = james_PM_rattenpest.1
+					}
+					if = {
+						limit =  { has_province_modifier = james_PM_rattenpest.2 }
+						remove_province_modifier = james_PM_rattenpest.2
+					}
+				}
+				if = {
+					limit = { ai = no }
+					add_treasury = -100
+				}
+				hidden_effect = {
 				}
 			}
 		}
