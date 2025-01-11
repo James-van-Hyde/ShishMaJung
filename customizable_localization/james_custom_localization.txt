@@ -1,0 +1,166 @@
+#AVIALABLE CUSTOM LOCALISATION KEYS
+#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
+# To not display anything, you can use 'localisation_key = ""'
+# Please add one example sentence for each key.
+
+#As this list grow organize with categories.
+#Current loc keys in this file:
+ #
+ # Fixed Text - James indikators/subtitles
+ #
+ #      JamesIndikatorReference, JamesIndikatorAttention
+ #
+ # Fixed Text - James usernames
+ # 
+ #      JamesCustomUsername(1-10)
+ #
+ # Fixed Text - James references
+ #
+ #      JamesCustomReference1, JamesCustomReference2
+ #
+
+#Fixed Text - james indikators/subtitles
+    #ex: ">Normal Text here< [Get.jamesIndikatorAttention] >Text after jamesAttention (after the text/spaces/linebreaks that jamesAttention)<"
+    defined_text = {
+        name = JamesIndikatorReference
+
+        text = {
+            localisation_key = string_james_custom_indikator_reference
+            trigger = {
+                always = yes
+            }
+        }
+    }
+    defined_text = {
+        name = JamesIndikatorAttention
+
+        text = {
+            localisation_key = string_james_custom_indikator_attention
+            trigger = {
+                always = yes
+            }
+        }
+    }
+#Fixed Text - HvH usernames
+    #ex: Mr. [Get.JamesCustomUsername1] has 1 apple > Mr. James van Hyde has 1 apple
+    defined_text = {
+        name = JamesCustomUsername1
+
+        text = {
+            localisation_key = string_james_custom_username_1
+            trigger = {
+                always = yes
+            }
+        }
+    }
+    defined_text = {
+        name = JamesCustomUsername2
+
+        text = {
+            localisation_key = string_james_custom_username_2
+            trigger = {
+                always = yes
+            }
+        }
+    }
+    defined_text = {
+        name = JamesCustomUsername3
+
+        text = {
+            localisation_key = string_james_custom_username_2
+            trigger = {
+                always = yes
+            }
+        }
+    }
+    defined_text = {
+        name = JamesCustomUsername4
+
+        text = {
+            localisation_key = string_james_custom_username_2
+            trigger = {
+                always = yes
+            }
+        }
+    }
+    defined_text = {
+        name = JamesCustomUsername5
+
+        text = {
+            localisation_key = string_james_custom_username_2
+            trigger = {
+                always = yes
+            }
+        }
+    }
+    defined_text = {
+        name = JamesCustomUsername6
+
+        text = {
+            localisation_key = string_james_custom_username_2
+            trigger = {
+                always = yes
+            }
+        }
+    }
+    defined_text = {
+        name = JamesCustomUsername7
+
+        text = {
+            localisation_key = string_james_custom_username_2
+            trigger = {
+                always = yes
+            }
+        }
+    }
+    defined_text = {
+        name = JamesCustomUsername8
+
+        text = {
+            localisation_key = string_james_custom_username_2
+            trigger = {
+                always = yes
+            }
+        }
+    }
+    defined_text = {
+        name = JamesCustomUsername9
+
+        text = {
+            localisation_key = string_james_custom_username_2
+            trigger = {
+                always = yes
+            }
+        }
+    }
+    defined_text = {
+        name = JamesCustomUsername10
+
+        text = {
+            localisation_key = string_james_custom_username_2
+            trigger = {
+                always = yes
+            }
+        }
+    }
+#Fixed Text - HvH references
+    defined_text = {
+        name = JamesCustomReference1
+
+        text = {
+            localisation_key = string_james_custom_reference_1
+            trigger = {
+                always = yes
+            }
+        }
+    }
+    defined_text = {
+        name = JamesCustomReference2
+
+        text = {
+            localisation_key = string_james_custom_reference_2
+            trigger = {
+                always = yes
+            }
+        }
+    }

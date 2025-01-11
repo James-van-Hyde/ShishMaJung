@@ -38,7 +38,7 @@ namespace = james_gimmik_event_james_advisor
 				ai_chance = { factor = 10 }
 				define_advisor = {
 					type = treasurer
-					name = "James van Hyde"
+					name = james_startup_custom_username_1
 					skill = 1
 					culture = ROOT
 					religion = ROOT
@@ -50,7 +50,7 @@ namespace = james_gimmik_event_james_advisor
 				ai_chance = { factor = 30 }
 				define_advisor = {
 					type = trader
-					name = "James van Hyde"
+					name = james_startup_custom_username_1
 					skill = 3
 					culture = ROOT
 					religion = ROOT
@@ -62,7 +62,7 @@ namespace = james_gimmik_event_james_advisor
 				ai_chance = { factor = 20 }
 				define_advisor = {
 					type = recruitmaster
-					name = "James van Hyde"
+					name = james_startup_custom_username_1
 					skill = 2
 					culture = ROOT
 					religion = ROOT
