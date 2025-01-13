@@ -90,6 +90,13 @@
 ###################################################
 
 #Decisions
+ #Form Karthago
+ shish_form_karthago_title: "Karthago Gründen"
+ shish_form_karthago_desc: "Wenn wir einen starken Anspruch auf das Erbe Karthagos schaffen könnten wäre es uns möglich diese Nation wiederzubeleben."
+
+#Form Turan Union
+ shish_form_turan_union_title: "Turan Union Gründen"
+ shish_form_turan_union_desc: "Als erben Atilas und Alp Arslans ist es unser schicksal vereint zu siegen"
 
 ###################################################
 # Nations                                         #
@@ -99,6 +106,10 @@
  KRT: "Karthago"
  KRT_ADJ: "Karthagisch"
  KRT_ADJ2: "Karthagisch"
+
+ TRU: "Turan Union"
+ TRU_ADJ: "Turanisch"
+ TRU_ADJ2: "Turanisch"
 
 #Nation Ideas
  KRT_ideas: "Kathagische Ideen"
@@ -119,3 +130,20 @@
  krt_Idea_7: "Söldner & Sold"
  krt_Idea_7_desc: "Durch Umgebung einiger Wertanlagen verfügen wir über mehr Geld für Externe Berater und Kommandanten für unser Militär... wer hätte gedacht das dies unserer Armee hilft?"
  
+ TRU_ideas: "Turanische Ideen"
+ TRU_ideas_bonus: "Turanische Tradition"
+ TRU_ideas_start: "Turanische Ambitionen"
+ tru_idea_1: "Vereinte Khans"
+ tru_idea_1_desc: "So wie es der große Tengri im Himmel wollte haben sich unsere Reiche verbunden als ein Volk."
+ tru_idea_2: "Turanische Seidenstraße"
+ tru_idea_2_desc: "So wie unsere vorfahren halten wir einen anspruch auf die Seidenstraße, Von Istanbul nach Samarkand haben unsere Händler die macht."
+ tru_idea_3: "Turanische janitscharen"
+ tru_idea_3_desc: "Die Osmanische elite armee der janitscharen, welches ein sehr überagendes konzept von kriegswillen fürs Vaterland steht wo jedoch kein Türke für bluten muss."
+ tru_idea_4: "Kanuni"
+ tru_idea_4_desc: "Das Kanuni, ein gesetzes entwurf welches die pracht und die Dschizya steuer mit der lehre und denn gesetzen der Türkvölker vereint."
+ tru_idea_5: "Tor nach Europa"
+ tru_idea_5_desc: "Als herscher der Seiden straße nach europa und über Konstantinopel sind wir der weg rein und raus für neue erfindungen, als auch für kulturellen wandel zwichen beider kontinenten."
+ tru_idea_6: "Turanische Gesellschaft"
+ tru_idea_6_desc: "Nicht nur das wir in einer Religions freiheit leben, nein wir sind auch die herren einer adaptiven Kultur Union."
+ tru_idea_7: "Turanisches Tanzimat"
+ tru_idea_7_desc: "Während unsere Osmanischen Brüder militärisch an der spitze stehen, kämpft man in zentral asien noch mit dem bogen das ruft nach einer modernisierung und zwar nach dem Tanzimat."

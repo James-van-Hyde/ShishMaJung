@@ -1,2 +1,4 @@
 # Special countries..
 KRT = "countries/Karthago.txt"
+
+TRU = "countries/Turan.txt"

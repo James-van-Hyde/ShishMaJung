@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = sultanate_of_rum_reform
+government_rank = 2
+mercantilism = 25
+technology_group = ottoman
+religion = sunni
+primary_culture = turkish
+capital = 151	# Istanbul
+fixed_capital = 151 # Cannot move capital away from this province & no power cost to move to it
