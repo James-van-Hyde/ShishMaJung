@@ -42,3 +42,48 @@ KRT_ideas = {
         fire_damage_received = -0.05
     }
 }
+
+TRU_ideas = {
+    start = {
+        discipline = 0.10
+        core_creation = -0.25
+
+  } 
+
+    bonus = {
+        production_efficiency = 0.15
+    }
+
+    trigger = {
+        tag = TRU
+    }
+    free = yes
+
+    tru_Idea_1 = {
+        num_accepted_cultures = 2
+        years_of_nationalism = -5
+    }
+    tru_Idea_2  = {
+        trade_efficiency = 0.10
+        global_trade_power = 0.10
+    }
+    tru_Idea_3  = {
+        cavalry_power = 0.20
+        infantry_power = 0.15
+    }
+   tru_Idea_4  = {
+    global_tax_modifier = 0.20
+    reform_progress_growth = 0.15
+    }
+    tru_Idea_5  = {
+        technology_cost = -0.10
+    }
+    tru_Idea_6  = {
+        global_unrest = -3
+        liberty_desire = -15
+    }
+    tru_Idea_7  = {
+        land_forcelimit_modifier = 0.20
+        fire_damage_received = -0.10
+    }
+}

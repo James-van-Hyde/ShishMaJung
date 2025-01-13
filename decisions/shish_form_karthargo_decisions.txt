@@ -9,6 +9,12 @@ country_decisions = {
                 ai = no
                 is_playing_custom_nation = no
             }
+            OR = {
+				tag = TUN
+				tag = MOR
+				tag = GRA 
+				tag = ARA
+			}
             NOT = { exists = KRT } # Karthago darf nicht existieren
             NOT = { tag = PAP } # Papststaat ausgeschlossen
             NOT = { tag = ITA } # Italien ausgeschlossen
