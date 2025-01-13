@@ -1,6 +1,6 @@
 
 country_decisions = {
-    shish_form_Turan_Union = {
+    shish_form_turan_union = {
         major = yes
         potential = {
             normal_or_historical_nations = yes
