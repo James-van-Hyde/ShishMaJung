@@ -1,0 +1,68 @@
+#Country Name: Turan Union
+
+graphical_culture = muslimgfx
+
+color = { 100 149 237 } # Blau-Türkis
+revolutionary_colors = { 0 5 0 } # Rot als Kontrast für revolutionäres Flair
+
+historical_idea_groups = {
+    offensive_ideas
+    trade_ideas
+    economic_ideas
+    diplomatic_ideas
+    religious_ideas
+    quality_ideas
+    administrative_ideas
+    expansion_ideas
+}
+
+historical_units = {
+    janissary_infantry
+    anatolian_cavalry
+    sipahi_cavalry
+    musket_infantry
+    turkish_organ_gun
+    ottoman_redif_infantry
+    ottoman_guard_cavalry
+    ottoman_artillery
+    napoleonic_square
+    napoleonic_lancers
+    turkish_riflemen
+}
+
+monarch_names = {
+    "Osman #1" = 20
+    "Orhan #1" = 15
+    "Mehmed #2" = 30
+    "Bayezid #1" = 25
+    "Selim #1" = 25
+    "Süleyman der Prächtige #1" = 15
+    "Abdülmecid #1" = 10
+    "Tamerlan #1" = 5
+    "Timur #1" = 5
+    "Ilkay" = -1
+}
+
+leader_names = {
+    Osman
+    Orhan
+    Mehmed
+    Bayezid
+    Selim
+    Timur
+    Tamerlan
+    Süleyman
+}
+
+ship_names = {
+    "Stolz von Anatolien" "Flamme von Baku" "Löwe von Kaspien" "Schild von Turan"
+    "Triumph von Samarkand" "Schwert von Khiva" "Licht von Turkestan" "Befreier von Buchara"
+}
+
+army_names = {
+    "Armee von $PROVINCE$" "Sipahi-Garde" "Janitscharen-Korps"
+}
+
+fleet_names = {
+    "Flotte der Türkischen See"
+}
