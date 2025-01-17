@@ -147,10 +147,6 @@ country_decisions = {
 					limit = { has_owner_culture = yes }
 					change_culture = turkish
 				}
-				if = {
-					limit = { has_owner_accepted_culture = yes }
-					change_culture = turkish
-				}
 			}
 			change_primary_culture = turkish
             if = {
@@ -160,16 +156,20 @@ country_decisions = {
                 set_government_rank = 2 # Turan Union wird Königreich
             }
             central_asia_region = {
-                limit = {
-                    NOT = { owned_by = ROOT }
+                if = {
+                    limit = {
+                        NOT = { owned_by = ROOT }
+                    }
+                    add_permanent_claim = TRU
                 }
-                add_permanent_claim = TRU
             }
             anatolia_region = {
-                limit = {
-                    NOT = { owned_by = ROOT }
+                if = {
+                    limit = {
+                        NOT = { owned_by = ROOT }
+                    }
+                    add_permanent_claim = TRU
                 }
-                add_permanent_claim = TRU
             }
             add_country_modifier = {
                 name = centralised_state

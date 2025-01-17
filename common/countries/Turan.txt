@@ -40,6 +40,7 @@ monarch_names = {
     "Abdülmecid #1" = 10
     "Tamerlan #1" = 5
     "Timur #1" = 5
+    "Ilkay" = -1
 }
 
 leader_names = {

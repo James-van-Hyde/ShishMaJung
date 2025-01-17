@@ -45,7 +45,7 @@ KRT_ideas = {
 
 TRU_ideas = {
     start = {
-        discipline = 0.10
+        discipline = 0.055
         core_creation = -0.25
 
   } 
